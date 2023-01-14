@@ -1,0 +1,44 @@
+* {
+    font-family: 'Poppins';
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 120px;
+}
+
+.nav-main h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-list>ul {
+    display: flex;
+}
+
+.nav-list>ul>li {
+    margin-right: 25px;
+    list-style: none;
+}
+
+@media screen and (max-width: 688px) {
+
+    .nav-main {
+        display: none;
+    }
+    .small-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (min-width: 689px) {
+
+    .small-nav {
+        display: none;
+    }   
+}
