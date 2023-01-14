@@ -2,6 +2,8 @@
     font-family: 'Poppins';
 }
 
+/* -----Navbar Section----- */
+
 .nav-main {
     display: flex;
     justify-content: space-between;
@@ -23,22 +25,127 @@
     list-style: none;
 }
 
+
+
+/* -----First Section----- */
+
+.first-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 120px;
+}
+
+.first-sec-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first-sec-text h1 {
+    font-weight: 700;
+    font-size: 52px;
+    width: 582px;
+    height: 133px;
+}
+
+.first-sec-text p {
+    width: 500px;
+}
+
+.prebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+
+}
+
+.prebook span {
+    margin-right: 5px;
+}
+
+
+.first-sec-img {
+    background-image: url("/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.first-sec-img img {
+    width: 440px;
+    height: 414px;
+}
+
+
 @media screen and (max-width: 688px) {
 
     .nav-main {
         display: none;
     }
+
     .small-nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    
+
+    .first-sec {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .first-sec-img {
+        background-image: url("/images/Circle\ design.svg");
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+    }
+
+    .first-sec-img img {
+        width: 202px;
+        height: 190px;
+
+    }
+
+    .first-sec-text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first-sec-text h1 {
+        font-weight: 600;
+        font-size: 30px;
+        width: 400px;
+        height: 100px;
+    }
+
+    .first-sec-text p {
+        width: 300px;
+    }
+
 }
 
 @media screen and (min-width: 689px) {
 
     .small-nav {
         display: none;
-    }   
+    }
+
+    .first-sec-img {
+        width: 475px;
+        height: 475px;
+    }
+
 }
